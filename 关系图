@@ -1,0 +1,701 @@
+var datas = {
+    userName: '我',
+    chartData: [{
+            userName: '小明',
+            id: 502,
+            value: 0.0996,
+            pid: 648,
+            children: [{
+                    userName: '小李',
+                    id: 488,
+                    value: 0.1766,
+                    pid: 502,
+                    children: null,
+                },
+                {
+                    userName: '小白',
+                    id: 506,
+                    value: 0.1761,
+                    pid: 502,
+                    children: null,
+                },
+                {
+                    userName: '小A',
+                    id: 492,
+                    value: 0.1754,
+                    pid: 502,
+                    children: null,
+                },
+                {
+                    userName: '小B',
+                    id: 489,
+                    value: 0.1647,
+                    pid: 502,
+                    children: null,
+                },
+                {
+                    userName: '小C',
+                    id: 496,
+                    value: 0.1311,
+                    pid: 502,
+                    children: null,
+                },
+            ],
+        },
+        {
+            userName: '小于',
+            id: 485,
+            value: 0.0923,
+            pid: 648,
+            children: [{
+                    userName: '小D',
+                    id: 502,
+                    value: 0.1384,
+                    pid: 485,
+                    children: null,
+                },
+                {
+                    userName: '小E',
+                    id: 506,
+                    value: 0.1374,
+                    pid: 485,
+                    children: null,
+                },
+                {
+                    userName: '小F',
+                    id: 492,
+                    value: 0.1337,
+                    pid: 485,
+                    children: null,
+                },
+                {
+                    userName: '小G',
+                    id: 489,
+                    value: 0.1192,
+                    pid: 485,
+                    children: null,
+                },
+                {
+                    userName: '小P',
+                    id: 512,
+                    value: 0.1117,
+                    pid: 485,
+                    children: null,
+                },
+            ],
+        },
+        {
+            userName: '小王',
+            id: 512,
+            value: 0.0874,
+            pid: 648,
+            children: [{
+                    userName: '老王',
+                    id: 506,
+                    value: 0.1886,
+                    pid: 512,
+                    children: null,
+                },
+                {
+                    userName: '小O',
+                    id: 492,
+                    value: 0.1582,
+                    pid: 512,
+                    children: null,
+                },
+                {
+                    userName: '小N',
+                    id: 502,
+                    value: 0.1565,
+                    pid: 512,
+                    children: null,
+                },
+                {
+                    userName: '小P',
+                    id: 508,
+                    value: 0.1351,
+                    pid: 512,
+                    children: null,
+                },
+                {
+                    userName: '小C',
+                    id: 488,
+                    value: 0.13,
+                    pid: 512,
+                    children: null,
+                },
+            ],
+        },
+        {
+            userName: '小李',
+            id: 492,
+            value: 0.0851,
+            pid: 648,
+            children: [{
+                    userName: '小M',
+                    id: 489,
+                    value: 0.1758,
+                    pid: 492,
+                    children: null,
+                },
+                {
+                    userName: '小Z',
+                    id: 488,
+                    value: 0.1293,
+                    pid: 492,
+                    children: null,
+                },
+                {
+                    userName: '小X',
+                    id: 508,
+                    value: 0.1282,
+                    pid: 492,
+                    children: null,
+                },
+                {
+                    userName: '小E',
+                    id: 501,
+                    value: 0.1128,
+                    pid: 492,
+                    children: null,
+                },
+                {
+                    userName: '小I',
+                    id: 500,
+                    value: 0.1014,
+                    pid: 492,
+                    children: null,
+                },
+            ],
+        },
+        {
+            userName: '老王',
+            id: 452,
+            value: 0.0809,
+            pid: 648,
+            children: [{
+                    userName: '老李',
+                    id: 290,
+                    value: 0.0698,
+                    pid: 452,
+                    children: null,
+                },
+                {
+                    userName: '老P',
+                    id: 485,
+                    value: 0.0639,
+                    pid: 452,
+                    children: null,
+                },
+                {
+                    userName: '老哥',
+                    id: 502,
+                    value: 0.0578,
+                    pid: 452,
+                    children: null,
+                },
+                {
+                    userName: '老姐',
+                    id: 492,
+                    value: 0.0562,
+                    pid: 452,
+                    children: null,
+                },
+                {
+                    userName: '小大',
+                    id: 512,
+                    value: 0.0542,
+                    pid: 452,
+                    children: null,
+                },
+            ],
+        },
+        {
+            userName: '老姐',
+            id: 506,
+            value: 0.0803,
+            pid: 648,
+            children: [{
+                    userName: '老妈',
+                    id: 492,
+                    value: 0.2034,
+                    pid: 506,
+                    children: null,
+                },
+                {
+                    userName: '老爸',
+                    id: 489,
+                    value: 0.1417,
+                    pid: 506,
+                    children: null,
+                },
+                {
+                    userName: '老哥',
+                    id: 488,
+                    value: 0.137,
+                    pid: 506,
+                    children: null,
+                },
+                {
+                    userName: '小妹',
+                    id: 508,
+                    value: 0.1229,
+                    pid: 506,
+                    children: null,
+                },
+                {
+                    userName: '小弟',
+                    id: 500,
+                    value: 0.0977,
+                    pid: 506,
+                    children: null,
+                },
+            ],
+        },
+        {
+            userName: '小白',
+            id: 491,
+            value: 0.0744,
+            pid: 648,
+            children: [{
+                    userName: '晓红',
+                    id: 492,
+                    value: 0.1509,
+                    pid: 491,
+                    children: null,
+                },
+                {
+                    userName: '小兰',
+                    id: 506,
+                    value: 0.1323,
+                    pid: 491,
+                    children: null,
+                },
+                {
+                    userName: '小黑',
+                    id: 502,
+                    value: 0.1289,
+                    pid: 491,
+                    children: null,
+                },
+                {
+                    userName: '小子',
+                    id: 489,
+                    value: 0.126,
+                    pid: 491,
+                    children: null,
+                },
+                {
+                    userName: '小红',
+                    id: 494,
+                    value: 0.1037,
+                    pid: 491,
+                    children: null,
+                },
+            ],
+        },
+        {
+            userName: '阿玛尼',
+            id: 508,
+            value: 0.0713,
+            pid: 648,
+            children: [{
+                    userName: '艾则孜额',
+                    id: 488,
+                    value: 0.1175,
+                    pid: 508,
+                    children: null,
+                },
+                {
+                    userName: '丰富',
+                    id: 500,
+                    value: 0.1028,
+                    pid: 508,
+                    children: null,
+                },
+                {
+                    userName: '嗯嗯',
+                    id: 501,
+                    value: 0.0869,
+                    pid: 508,
+                    children: null,
+                },
+                {
+                    userName: '试试',
+                    id: 297,
+                    value: 0.082,
+                    pid: 508,
+                    children: null,
+                },
+                {
+                    userName: '发发发',
+                    id: 507,
+                    value: 0.0794,
+                    pid: 508,
+                    children: null,
+                },
+            ],
+        },
+        {
+            userName: '安抚',
+            id: 488,
+            value: 0.0678,
+            pid: 648,
+            children: [{
+                    userName: '分',
+                    id: 496,
+                    value: 0.116,
+                    pid: 488,
+                    children: null,
+                },
+                {
+                    userName: '算法',
+                    id: 507,
+                    value: 0.1038,
+                    pid: 488,
+                    children: null,
+                },
+                {
+                    userName: '丰富',
+                    id: 500,
+                    value: 0.1007,
+                    pid: 488,
+                    children: null,
+                },
+                {
+                    userName: '提提提',
+                    id: 501,
+                    value: 0.0831,
+                    pid: 488,
+                    children: null,
+                },
+            ],
+        },
+        {
+            userName: '在v',
+            id: 489,
+            value: 0.0673,
+            pid: 648,
+            children: [{
+                    userName: '发放',
+                    id: 488,
+                    value: 0.1495,
+                    pid: 489,
+                    children: null,
+                },
+                {
+                    userName: '分完氛',
+                    id: 508,
+                    value: 0.1311,
+                    pid: 489,
+                    children: null,
+                },
+                {
+                    userName: '访问啊发',
+                    id: 504,
+                    value: 0.1301,
+                    pid: 489,
+                    children: null,
+                },
+                {
+                    userName: '惹我热无',
+                    id: 500,
+                    value: 0.1099,
+                    pid: 489,
+                    children: null,
+                },
+                {
+                    userName: '任务',
+                    id: 501,
+                    value: 0.1084,
+                    pid: 489,
+                    children: null,
+                },
+            ],
+        },
+    ],
+};
+
+var treeArr = []
+
+function getTreeData(tree) {
+    for (var i = 0; i < tree.length; i++) {
+        var treeOne = tree[i];
+        if (treeOne.children && treeOne.children.length) {
+            getTreeData(treeOne.children);
+        }
+        treeArr.push(treeOne);
+    }
+}
+
+getTreeData(datas.chartData)
+
+treeArr.unshift({
+    userName: datas.userName,
+    id: datas.chartData[0].pid,
+    pid: 0,
+});
+for (var i = 0; i < treeArr.length; i++) {
+    for (var j = i + 1; j < treeArr.length; j++) {
+        if (treeArr[i].userName == treeArr[j].userName) {
+            treeArr[j].userName =
+                treeArr[i].userName + '-' + ' '.repeat(j);
+        }
+    }
+}
+
+var userName = datas.userName;
+
+var datas = datas.chartData
+
+function getvalueChartLegend() {
+    var _result = [];
+    if (datas && datas.length) {
+        datas.forEach((item, index) => {
+            _result.push(item.userName.split('-')[0]);
+        });
+    }
+    return _result;
+}
+
+var legendData = getvalueChartLegend()
+
+function getRepulsion() {
+    var length = 0;
+    if (datas && datas.length) {
+        length = 100 + (10 - datas.length) * 10;
+    }
+    return length;
+}
+var color = [
+    '#f09e62',
+    '#3c891a',
+    '#14c484',
+    '#26c85f',
+    '#3dcfc0',
+    '#3daecf',
+    '#446fbd',
+    '#6944bd',
+    '#bd44a2',
+    '#f06f62',
+];
+
+var repulsionData = getRepulsion()
+
+function getvalueChartData() {
+    var _result = [];
+    if (datas && datas.length) {
+        _result.push({
+            name: userName,
+            pid: datas[0].pid,
+            value: 101,
+            itemStyle: {
+                normal: {
+                    color: '#f2d485',
+                },
+            },
+            label: {
+                normal: {
+                    show: true,
+                    position: 'inside',
+                    color: '#000',
+                    formatter: p => {
+                        return p.name.split('-')[0];
+                    },
+                },
+            },
+        });
+        datas.forEach((item, index) => {
+            _result.push({
+                name: item.userName,
+                value: item.value * 100,
+                category: item.userName.split('-')[0],
+                pid: item.id,
+                draggable: true,
+                itemStyle: {
+                    normal: {
+                        color: color[index],
+                    },
+                },
+            });
+            if (item.children && item.children.length) {
+                item.children.forEach((item2, index2) => {
+                    if (
+                        item2.userName.split('-')[0] !== userName
+                    ) {
+                        _result.push({
+                            name: item2.userName,
+                            draggable: true,
+                            pid: item2.id,
+                            category: item.userName.split('-')[0],
+                            value: item2.value * 100,
+                            itemStyle: {
+                                normal: {
+                                    color: color[index],
+                                },
+                            },
+                        });
+                    } else {
+                        _result.push({
+                            name: item2.userName,
+                            draggable: true,
+                            pid: item2.id,
+                            category: item.userName.split('-')[0],
+                            value: item2.value * 100,
+                            itemStyle: {
+                                normal: {
+                                    color: '#f2d485',
+                                },
+                            },
+                        });
+                    }
+                });
+            }
+        });
+    }
+    return _result;
+}
+var chartData = getvalueChartData()
+
+function getvalueChartDataLinks() {
+    var _result = [];
+    if (datas && datas.length) {
+        datas.forEach((item, index) => {
+            _result.push({
+                source: userName,
+                target: item.userName,
+            });
+            if (item.children && item.children.length) {
+                item.children.forEach((item2, index2) => {
+                    _result.push({
+                        source: item2.userName,
+                        target: item.userName,
+                    });
+                });
+            }
+        });
+    }
+    return _result;
+}
+var dataLinks = getvalueChartDataLinks()
+
+function getvalueChartCategories() {
+    var _result = [];
+    if (datas && datas.length) {
+        datas.forEach((item, index) => {
+            _result.push({
+                name: item.userName.split('-')[0],
+            });
+        });
+    }
+    return _result;
+}
+var categories = getvalueChartCategories()
+
+option = {
+    backgroundColor: '#1b1b1b',
+    color: [
+        '#f09e62',
+        '#3c891a',
+        '#14c484',
+        '#26c85f',
+        '#3dcfc0',
+        '#3daecf',
+        '#446fbd',
+        '#6944bd',
+        '#bd44a2',
+        '#f06f62',
+    ],
+    tooltip: {
+        show: true,
+        trigger: 'item',
+        formatter: function(params) {
+            if (params.dataType === 'edge') {
+                return;
+            } else if (params.data.value && params.data.value < 101) {
+                var _result = `<div style="line-height:24px"><div>名称 : ${
+              params.name.split('-')[0]
+            }</div><div style="line-height:24px"><div>value : ${params.data.value.toFixed(
+              2,
+            )}</div>`;
+                return _result;
+            } else {
+                var _result = `<div style="line-height:24px"><div>名称 : ${
+              params.name.split('-')[0]
+            }</div>`;
+                return _result;
+            }
+        },
+    },
+    grid: {
+        left: 0,
+        top: 0,
+        right: 0,
+        bottom: 0,
+    },
+    legend: {
+        data: legendData,
+        textStyle: {
+            color: '#fff',
+        },
+        icon: 'circle',
+        orient: 'vertical',
+        right: 10,
+        top: 20,
+        bottom: 20,
+        itemWidth: 10,
+        itemHeight: 10,
+    },
+    xAxis: {
+        show: false,
+    },
+    yAxis: {
+        show: false,
+    },
+    series: [{
+        name: '数据',
+        type: 'graph',
+        layout: 'force',
+        force: {
+            repulsion: repulsionData,
+            edgeLength: 60,
+            gravity: 0.03,
+            layoutAnimation: true,
+        },
+        symbolSize: data => {
+            return Math.sqrt(data) * 10 < 20 ? 20 : Math.sqrt(data) * 10;
+        },
+        symbol: 'circle',
+        edgeSymbolSize: 8,
+        label: {
+            normal: {
+                show: true,
+                position: 'top',
+                // textBorderColor: '#fff',
+                formatter: p => {
+                    return p.name.split('-')[0];
+                },
+            },
+        },
+        itemStyle: {
+            normal: {
+                shadowColor: 'none',
+            },
+            emphasis: {},
+        },
+        lineStyle: {
+            normal: {
+                opacity: 0.9,
+                width: 1,
+                curveness: 0,
+                color: 'source',
+            },
+        },
+        focusNodeAdjacency: true,
+        legendHoverLink: true,
+        roam: 'move',
+        data: chartData,
+        links: dataLinks,
+        categories: categories,
+    }]
+};
